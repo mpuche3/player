@@ -44,8 +44,6 @@ document.addEventListener("dblclick", _ => {
 document.addEventListener('swiped-right', function(e) {
     console.log(e.target);
     document.onclick()
-
-
 });
 
 
