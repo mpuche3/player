@@ -5,7 +5,6 @@ const currentTimes = [3, 6, 10, 12, 15, 18, 21, 25, 32, 35, 38, 41, 45, 48, 50, 
 let currentTimesPointer = 0;
 let promisePlay;
 
-
 function playLoop(currentTime, duration) {
     audio.src = './audio/blink_02.mp3';
     audio.currentTime = currentTime;
@@ -20,7 +19,7 @@ function playLoop(currentTime, duration) {
     }, 3 * duration * 1000);
 }
 
-document.onclick = function(e) {
+function playNext() {
     let currentTime = currentTimes[currentTimesPointer]
     let duration = currentTimes[currentTimesPointer + 1] - currentTimes[currentTimesPointer]
     clearTimeout(timeoutId_pause)
@@ -33,22 +32,32 @@ document.onclick = function(e) {
     }
 }
 
-document.addEventListener("dblclick", _ => {
+function playPrevious() {
+    let currentTime = currentTimes[currentTimesPointer]
+    let duration = currentTimes[currentTimesPointer + 1] - currentTimes[currentTimesPointer]
+    clearTimeout(timeoutId_pause)
+    clearTimeout(timeoutId_play);
+    playLoop(currentTime, duration)
+    if (currentTimesPointer === 0) {
+        currentTimesPointer = 0;
+    } else {
+        currentTimesPointer -= 1;
+    }
+}
+
+function pause() {
     clearTimeout(timeoutId_pause)
     clearTimeout(timeoutId_play)
     promisePlay.then(_ => {
         audio.pause();
     })
-})
+}
 
-document.addEventListener('swiped-right', function(e) {
-    console.log(e.target);
-    document.onclick()
-});
-
-
-
-
+document.onclick = playNext
+document.addEventListener("dblclick", pause)
+document.addEventListener('swiped-right', playPrevious);
+document.addEventListener('swiped-left', playNext);
+document.addEventListener('swiped-up', pause);
 
 
 /*!
