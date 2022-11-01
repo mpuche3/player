@@ -17,7 +17,7 @@ function playLoop(currentTime, duration) {
     }, duration * 1000)
     timeoutId_play = setTimeout(_ => {
         playLoop(currentTime, duration)
-    }, 2 * duration * 1000);
+    }, 3 * duration * 1000);
 }
 
 document.onclick = function(e) {
