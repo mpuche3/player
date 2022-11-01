@@ -40,3 +40,10 @@ document.addEventListener("dblclick", _ => {
         audio.pause();
     })
 })
+
+document.addEventListener('swiped-right', function(e) {
+    console.log(e.target);
+    document.onclick()
+
+
+});
