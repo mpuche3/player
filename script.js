@@ -1,63 +1,122 @@
-let timeoutId_play;
-let timeoutId_pause;
+const tracks = {
+    "blink_00": {
+        src: "./audio/blink_00.mp3",
+        currentTimes: [4, 6, 11, 18, 22, 28, 37, 43, 52, 57, 60 + 5, 60 + 15, 60 + 22, 60 + 26, 60 + 28, 60 + 34, 60 + 39, 60 + 46, 60 + 56, 120 + 2, 120 + 6, 120 + 11]
+    }, "blink_01": {
+        src: "./audio/blink_01.mp3",
+        currentTimes: [3, 7, 12, 16, 24, 27, 33, 39, 45, 50, 56, 60 + 2, 60 + 11, 60 + 16, 60 + 24, 60 + 35, 60 + 42],
+    }, "blink_02": {
+        src: './audio/blink_02.mp3',
+        currentTimes: [3, 6, 10, 12, 15, 18, 21, 25, 32, 35, 38, 41, 45, 48, 50, 53, 56, 60 + 0, 60 + 4, 60 + 8, 60 + 12, 60 + 15, 60 + 20, 60 + 24, 60 + 29, 60 + 33, 60 + 37],
+    }, 
+}
 
-const currentTimes = [3, 6, 10, 12, 15, 18, 21, 25, 32, 35, 38, 41, 45, 48, 50, 53, 56, 60 + 0, 60 + 4, 60 + 8, 60 + 12, 60 + 15, 60 + 20, 60 + 24, 60 + 29, 60 + 33, 60 + 37]
-let currentTimesPointer = 0;
-let promisePlay;
+const FactoryAudio = function () {
+    const audio = document.createElement('audio'); 
+    let track = "blink_00"
+    let currentTimes = tracks[track].currentTimes;
+    let timeoutId_play;
+    let timeoutId_pause;
+    let currentTimesPointer = -1;
+    let promisePlay;
+    let status = "PAUSED";
+    audio.src = tracks[track].src;
 
-function playLoop(currentTime, duration) {
-    audio.src = './audio/blink_02.mp3';
-    audio.currentTime = currentTime;
-    promisePlay = audio.play();
-    timeoutId_pause = setTimeout(_ => {
-        promisePlay.then(_ => {
+    function getStatus () {
+        return status
+    }
+
+    function playLoop(currentTime, duration) {
+        audio.currentTime = currentTime;
+        promisePlay = audio.play();
+        status = "PLAYING";
+        timeoutId_pause = setTimeout(_ => {
+            promisePlay.then(_ => {
+                audio.pause();
+            })
+        }, duration * 1000)
+        timeoutId_play = setTimeout(_ => {
+            playLoop(currentTime, duration)
+        }, duration * 1000 + 1000);
+    }
+    
+    function play() {
+        if (currentTimesPointer === -1) currentTimesPointer = 1
+        let currentTime = currentTimes[currentTimesPointer];
+        let duration = currentTimes[currentTimesPointer + 1] - currentTimes[currentTimesPointer];
+        clearTimeout(timeoutId_pause);
+        clearTimeout(timeoutId_play);
+        playLoop(currentTime, duration);
+    }
+
+    function pause() {
+        clearTimeout(timeoutId_pause)
+        clearTimeout(timeoutId_play)
+        return promisePlay.then(_ => {
             audio.pause();
+            status = "PAUSED";
         })
-    }, duration * 1000)
-    timeoutId_play = setTimeout(_ => {
-        playLoop(currentTime, duration)
-    }, 3 * duration * 1000);
-}
-
-function playNext() {
-    let currentTime = currentTimes[currentTimesPointer]
-    let duration = currentTimes[currentTimesPointer + 1] - currentTimes[currentTimesPointer]
-    clearTimeout(timeoutId_pause)
-    clearTimeout(timeoutId_play);
-    playLoop(currentTime, duration)
-    if (currentTimesPointer + 2 === currentTimes.length) {
-        currentTimesPointer = 0;
-    } else {
-        currentTimesPointer += 1;
     }
-}
 
-function playPrevious() {
-    let currentTime = currentTimes[currentTimesPointer]
-    let duration = currentTimes[currentTimesPointer + 1] - currentTimes[currentTimesPointer]
-    clearTimeout(timeoutId_pause)
-    clearTimeout(timeoutId_play);
-    playLoop(currentTime, duration)
-    if (currentTimesPointer === 0) {
-        currentTimesPointer = 0;
-    } else {
+    function playNext() {
+        currentTimesPointer += 1
+        if (currentTimesPointer + 1 === currentTimes.length) currentTimesPointer = 0;
+        play();
+    }
+    
+    function playPrevious() {
         currentTimesPointer -= 1;
+        if (currentTimesPointer < 0) currentTimesPointer = 0;
+        play();
     }
+
+    function nextTrack() {
+        x = track.slice(7,8);
+        x = +x
+        x += 1;
+        if (x === 3) x = 0;
+        track = "blink_0" + x;
+        audio.src = tracks[track].src;
+        currentTimesPointer = 0;
+        currentTimes = tracks[track].currentTimes;
+        play()
+    }
+
+    function previousTrack() {
+        x = track.slice(7,8);
+        x = +x
+        x -= 1;
+        if (x < 0) x = "0";
+        track = "blink_0" + x;
+        audio.src = tracks[track].src;
+        currentTimesPointer = 0;
+        currentTimes = tracks[track].currentTimes;
+        play()
+    }
+
+    document.addEventListener('swiped-right', playPrevious);
+    document.addEventListener('swiped-left', playNext);
+    document.addEventListener('swiped-up', previousTrack);
+    document.addEventListener('swiped-down', nextTrack);
+    document.addEventListener("click", _ => {
+        if (status === "PLAYING") {
+            pause()
+        } else {
+            play()
+        }
+    });
+
+    return {playPrevious, playNext, pause, play, getStatus, nextTrack, previousTrack}
 }
 
-function pause() {
-    clearTimeout(timeoutId_pause)
-    clearTimeout(timeoutId_play)
-    promisePlay.then(_ => {
-        audio.pause();
-    })
-}
+// const href = window.location.href
+// const alternative_track = href.split("=").pop()
+// if (alternative_track !== href) track = alternative_track
+const audio = FactoryAudio()
 
-document.onclick = playNext
-document.addEventListener("dblclick", pause)
-document.addEventListener('swiped-right', playPrevious);
-document.addEventListener('swiped-left', playNext);
-document.addEventListener('swiped-up', pause);
+
+const bbb = 3;
+
 
 
 /*!
@@ -69,7 +128,6 @@ document.addEventListener('swiped-up', pause);
  * @license MIT
  */
 (function (window, document) {
-
     'use strict';
 
     // patch CustomEvent to allow constructor creation (IE/Chrome)
