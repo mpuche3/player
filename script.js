@@ -26,8 +26,14 @@ const FactoryAudio = function () {
         return status
     }
 
+    function update_title(blink, currentTime, duration) {
+        const title = document.querySelector("#title");
+        title.innerHTML = `${blink}: ${currentTime} (${duration}seconds)`
+    }
+
     function playLoop(currentTime, duration) {
         audio.currentTime = currentTime;
+        update_title(track, currentTime, duration);
         promisePlay = audio.play();
         status = "PLAYING";
         timeoutId_pause = setTimeout(_ => {
