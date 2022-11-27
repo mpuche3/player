@@ -112,6 +112,27 @@ const FactoryAudio = function () {
         }
     });
 
+    document.onkeydown = function (event) {
+        switch (event.keyCode) {
+            case 37:
+                playPrevious();
+                console.log("Left key is pressed.");
+                break;
+            case 38:
+                console.log("Up key is pressed.");
+                previousTrack()
+                break;
+            case 39:
+                console.log("Right key is pressed.");
+                playNext();
+                break;
+            case 40:
+                console.log("Down key is pressed.");
+                nextTrack()
+                break;
+        }
+    }
+
     return {playPrevious, playNext, pause, play, getStatus, nextTrack, previousTrack}
 }
 
