@@ -1,139 +1,120 @@
-const tracks = {
-    "blink_00": {
-        src: "./audio/blink_00.mp3",
-        currentTimes: [4, 6, 11, 18, 22, 28, 37, 43, 52, 57, 60 + 5, 60 + 15, 60 + 22, 60 + 26, 60 + 28, 60 + 34, 60 + 39, 60 + 46, 60 + 56, 120 + 2, 120 + 6, 120 + 11]
-    }, "blink_01": {
-        src: "./audio/blink_01.mp3",
-        currentTimes: [3, 7, 12, 16, 24, 27, 33, 39, 45, 50, 56, 60 + 2, 60 + 11, 60 + 16, 60 + 24, 60 + 35, 60 + 42],
-    }, "blink_02": {
-        src: './audio/blink_02.mp3',
-        currentTimes: [3, 6, 10, 12, 15, 18, 21, 25, 32, 35, 38, 41, 45, 48, 50, 53, 56, 60 + 0, 60 + 4, 60 + 8, 60 + 12, 60 + 15, 60 + 20, 60 + 24, 60 + 29, 60 + 33, 60 + 37],
-    }, 
-}
+const tracks = [{
+        audioFileFullPath: "./audio/blink_00.mp3",
+        currentTimes: [0, 4, 6, 11, 18, 22, 28, 37, 43, 52, 57, 60 + 5, 60 + 15, 60 + 22, 60 + 26, 60 + 28, 60 + 34, 60 + 39, 60 + 46, 60 + 56, 120 + 2, 120 + 6, 120 + 11]
+    }, {
+        audioFileFullPath: "./audio/blink_01.mp3",
+        currentTimes: [0, 3, 7, 12, 16, 24, 27, 33, 39, 45, 50, 56, 60 + 2, 60 + 11, 60 + 16, 60 + 24, 60 + 35, 60 + 42],
+    }, {
+        audioFileFullPath: './audio/blink_02.mp3',
+        currentTimes: [0, 3, 6, 10, 12, 15, 18, 21, 25, 32, 35, 38, 41, 45, 48, 50, 53, 56, 60 + 0, 60 + 4, 60 + 8, 60 + 12, 60 + 15, 60 + 20, 60 + 24, 60 + 29, 60 + 33, 60 + 37],
+    }, {
+    //     audioFileFullPath: './audio/blink_10.mp3',
+    //     currentTimes: [0, 3, 6, 9, 14, 19, 25, 33, 41, 46, 50, 55.5, 59.5, 60 + 3, 60 + 7, 60 + 13, 60 + 17, 60 + 24, 60 + 32, 60 + 40, 60 + 43, 60 + 47.5, 60 + 52, 60 + 58, 120 + 0.5, 120 + 4, 120 + 10]
+    // }, {
+        audioFileFullPath: './audio/blink_11.mp3',
+        currentTimes: [0, 3, 10, 16, 21, 26, 34, 40, 46, 49, 53, 60, 60 + 5, 60 + 9, 60 + 18, 60 + 22, 60 + 29, 60 + 39, 60 + 43, 60 + 46, 60 + 51, 60 + 56]
+    }
+]
 
 const FactoryAudio = function () {
-    const audio = document.createElement('audio'); 
-    let track = "blink_00"
-    let currentTimes = tracks[track].currentTimes;
+    let audio = document.createElement('audio'); 
+    let itracks = 0;
+    let iCurrentTimes = 0;
     let timeoutId_play;
     let timeoutId_pause;
-    let currentTimesPointer = -1;
     let promisePlay;
     let status = "PAUSED";
-    audio.src = tracks[track].src;
-
+    
     function getStatus () {
         return status
     }
 
-    function update_title(blink, currentTime, duration) {
+    function update_title(audioFileFullPath, currentTime, duration) {
         const title = document.querySelector("#title");
-        title.innerHTML = `${blink}: ${currentTime} (${duration}seconds)`
+        title.innerHTML = `${audioFileFullPath}: ${currentTime} (${duration}seconds)`
     }
-
-    function playLoop(currentTime, duration) {
+    
+    function play() {
+        const audioFileFullPath = tracks[itracks]["audioFileFullPath"];
+        const currentTime = tracks[itracks]["currentTimes"][iCurrentTimes];
+        const nextTime = tracks[itracks]["currentTimes"][iCurrentTimes + 1];
+        const duration = nextTime - currentTime;
+        clearTimeout(timeoutId_pause);
+        clearTimeout(timeoutId_play);
+        update_title(audioFileFullPath, currentTime, duration);
+        audio.pause();
+        audio = document.createElement('audio'); 
         audio.currentTime = currentTime;
-        update_title(track, currentTime, duration);
+        audio.src = audioFileFullPath;
         promisePlay = audio.play();
         status = "PLAYING";
         timeoutId_pause = setTimeout(_ => {
             promisePlay.then(_ => {
                 audio.pause();
-            })
+            });
         }, duration * 1000)
         timeoutId_play = setTimeout(_ => {
-            playLoop(currentTime, duration)
+            play();
         }, duration * 1000 + 1000);
     }
-    
-    function play() {
-        if (currentTimesPointer === -1) currentTimesPointer = 1
-        let currentTime = currentTimes[currentTimesPointer];
-        let duration = currentTimes[currentTimesPointer + 1] - currentTimes[currentTimesPointer];
+
+    function pause_play() {
         clearTimeout(timeoutId_pause);
         clearTimeout(timeoutId_play);
-        playLoop(currentTime, duration);
-    }
-
-    function pause() {
-        clearTimeout(timeoutId_pause)
-        clearTimeout(timeoutId_play)
-        return promisePlay.then(_ => {
-            audio.pause();
-            status = "PAUSED";
-        })
+        if (status === "PLAYING") {
+            promisePlay.then(_ => {
+                audio.pause();
+                status = "PAUSED";
+            });
+        } else {
+            play();
+        }
     }
 
     function playNext() {
-        currentTimesPointer += 1
-        if (currentTimesPointer + 1 === currentTimes.length) currentTimesPointer = 0;
+        iCurrentTimes += 1;
+        if (iCurrentTimes === tracks[itracks]["currentTimes"].length) iCurrentTimes = 0;
         play();
     }
     
     function playPrevious() {
-        currentTimesPointer -= 1;
-        if (currentTimesPointer < 0) currentTimesPointer = 0;
+        iCurrentTimes -= 1;
+        if (iCurrentTimes < 0) iCurrentTimes = 0;
         play();
     }
 
     function nextTrack() {
-        x = track.slice(7,8);
-        x = +x
-        x += 1;
-        if (x === 3) x = 0;
-        track = "blink_0" + x;
-        audio.src = tracks[track].src;
-        currentTimesPointer = 0;
-        currentTimes = tracks[track].currentTimes;
-        play()
+        iCurrentTimes = 0;
+        itracks += 1;
+        if (itracks === tracks.len) x = 0;
+        play();
     }
 
     function previousTrack() {
-        x = track.slice(7,8);
-        x = +x
-        x -= 1;
-        if (x < 0) x = "0";
-        track = "blink_0" + x;
-        audio.src = tracks[track].src;
-        currentTimesPointer = 0;
-        currentTimes = tracks[track].currentTimes;
-        play()
+        iCurrentTimes = 0;
+        itracks -= 1;
+        if (itracks < 0) x = 0;
+        play();
     }
 
     document.addEventListener('swiped-right', playPrevious);
     document.addEventListener('swiped-left', playNext);
     document.addEventListener('swiped-up', previousTrack);
     document.addEventListener('swiped-down', nextTrack);
-    document.addEventListener("click", _ => {
-        if (status === "PLAYING") {
-            pause()
-        } else {
-            play()
-        }
-    });
+    document.addEventListener("click", pause_play);
 
     document.onkeydown = function (event) {
-        switch (event.keyCode) {
-            case 37:
-                playPrevious();
-                console.log("Left key is pressed.");
-                break;
-            case 38:
-                console.log("Up key is pressed.");
-                previousTrack()
-                break;
-            case 39:
-                console.log("Right key is pressed.");
-                playNext();
-                break;
-            case 40:
-                console.log("Down key is pressed.");
-                nextTrack()
-                break;
+        const callback = {
+            "ArrowLeft"  : playPrevious,
+            "ArrowRight" : playNext,
+            "ArrowUp"    : previousTrack,
+            "ArrowDown"  : nextTrack,
+            "Enter"      : pause_play,
         }
+        callback[event.key]()
     }
-
-    return {playPrevious, playNext, pause, play, getStatus, nextTrack, previousTrack}
+    
+    return {playPrevious, playNext, pause_play, play, getStatus, nextTrack, previousTrack}
 }
 
 // const href = window.location.href
@@ -141,11 +122,7 @@ const FactoryAudio = function () {
 // if (alternative_track !== href) track = alternative_track
 const audio = FactoryAudio()
 
-
 const bbb = 3;
-
-
-
 /*!
  * swiped-events.js - v@version@
  * Pure JavaScript swipe events
