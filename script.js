@@ -42,10 +42,11 @@ const FactoryAudio = function () {
         clearTimeout(timeoutId_pause);
         clearTimeout(timeoutId_play);
         update_title(audioFileFullPath, currentTime, duration);
-        audio.pause();
-        audio = document.createElement('audio'); 
-        audio.currentTime = currentTime;
+        // WTF: 
+        // If audio.scr is set after audio.currentTime, 
+        // then audio.currentTime will be set to zero.
         audio.src = audioFileFullPath;
+        audio.currentTime = currentTime;
         promisePlay = audio.play();
         status = "PLAYING";
         timeoutId_pause = setTimeout(_ => {
@@ -53,9 +54,10 @@ const FactoryAudio = function () {
                 audio.pause();
             });
         }, duration * 1000)
+        const additionalTimeintheloop = 1000;
         timeoutId_play = setTimeout(_ => {
             play();
-        }, duration * 1000 + 1000);
+        }, duration * 1000 + additionalTimeintheloop);
     }
 
     function pause_play() {
@@ -114,13 +116,13 @@ const FactoryAudio = function () {
         callback[event.key]()
     }
     
-    return {playPrevious, playNext, pause_play, play, getStatus, nextTrack, previousTrack}
+    return {audio, playPrevious, playNext, pause_play, play, getStatus, nextTrack, previousTrack}
 }
 
 // const href = window.location.href
 // const alternative_track = href.split("=").pop()
 // if (alternative_track !== href) track = alternative_track
-const audio = FactoryAudio()
+const mpa = FactoryAudio()
 
 const bbb = 3;
 /*!
