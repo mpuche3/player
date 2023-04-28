@@ -61,6 +61,7 @@ const FactoryAudio = function () {
     }
 
     function pause_play() {
+        console.log("PAUSE_PLAY")
         clearTimeout(timeoutId_pause);
         clearTimeout(timeoutId_play);
         if (status === "PLAYING") {
@@ -74,6 +75,7 @@ const FactoryAudio = function () {
     }
 
     function playNext() {
+        console.log("NEXT")
         iCurrentTimes += 1;
         if (iCurrentTimes === tracks[itracks]["currentTimes"].length) iCurrentTimes = 0;
         play();
@@ -99,11 +101,16 @@ const FactoryAudio = function () {
         play();
     }
 
-    document.addEventListener('swiped-right', playPrevious);
-    document.addEventListener('swiped-left', playNext);
-    document.addEventListener('swiped-up', previousTrack);
-    document.addEventListener('swiped-down', nextTrack);
-    document.addEventListener("click", pause_play);
+    // document.addEventListener('swiped-right', playPrevious);
+    // document.addEventListener('swiped-left', playNext);
+    // document.addEventListener('swiped-up', previousTrack);
+    // document.addEventListener('swiped-down', nextTrack);
+    // document.addEventListener("click", pause_play);
+
+    document.querySelector(".button1").addEventListener("click", pause_play)
+    document.querySelector(".button2").addEventListener("click", previousTrack)
+    document.querySelector(".button3").addEventListener("click", nextTrack)
+    document.querySelector(".button4").addEventListener("click", playNext)
 
     document.onkeydown = function (event) {
         const callback = {

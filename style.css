@@ -1,3 +1,51 @@
 #title{
     color: "white";
 }
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+background-color: #45a049;
+}
+
+.button1 {
+flex-grow: 1;
+}
+
+.button-row {
+display: flex;
+flex-grow: 1;
+}
+
+.button2,
+.button3,
+.button4 {
+flex-grow: 1;
+border-left: 1px solid #ffffff;
+}
