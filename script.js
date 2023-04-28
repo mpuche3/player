@@ -1,20 +1,39 @@
-const tracks = [{
-        audioFileFullPath: "./audio/blink_00.mp3",
-        currentTimes: [0, 4, 6, 11, 18, 22, 28, 37, 43, 52, 57, 60 + 5, 60 + 15, 60 + 22, 60 + 26, 60 + 28, 60 + 34, 60 + 39, 60 + 46, 60 + 56, 120 + 2, 120 + 6, 120 + 11]
-    }, {
-        audioFileFullPath: "./audio/blink_01.mp3",
-        currentTimes: [0, 3, 7, 12, 16, 24, 27, 33, 39, 45, 50, 56, 60 + 2, 60 + 11, 60 + 16, 60 + 24, 60 + 35, 60 + 42],
-    }, {
-        audioFileFullPath: './audio/blink_02.mp3',
-        currentTimes: [0, 3, 6, 10, 12, 15, 18, 21, 25, 32, 35, 38, 41, 45, 48, 50, 53, 56, 60 + 0, 60 + 4, 60 + 8, 60 + 12, 60 + 15, 60 + 20, 60 + 24, 60 + 29, 60 + 33, 60 + 37],
-    }, {
-    //     audioFileFullPath: './audio/blink_10.mp3',
-    //     currentTimes: [0, 3, 6, 9, 14, 19, 25, 33, 41, 46, 50, 55.5, 59.5, 60 + 3, 60 + 7, 60 + 13, 60 + 17, 60 + 24, 60 + 32, 60 + 40, 60 + 43, 60 + 47.5, 60 + 52, 60 + 58, 120 + 0.5, 120 + 4, 120 + 10]
-    // }, {
-        audioFileFullPath: './audio/blink_11.mp3',
-        currentTimes: [0, 3, 10, 16, 21, 26, 34, 40, 46, 49, 53, 60, 60 + 5, 60 + 9, 60 + 18, 60 + 22, 60 + 29, 60 + 39, 60 + 43, 60 + 46, 60 + 51, 60 + 56]
-    }
-]
+
+// Create a new XMLHttpRequest object
+var xhr = new XMLHttpRequest();
+
+// Define the URL of the JSON file to load (using a relative path)
+var url = "tracks.json";
+
+// Use the open() method to initialize the request, with async = false
+xhr.open("GET", url, false);
+
+// Send the request to the server
+xhr.send();
+
+// Access the JSON data as a JavaScript object
+var tracks = JSON.parse(xhr.responseText);
+
+
+
+// const tracks = [{
+//         audioFileFullPath: "./audio/blink_00.mp3",
+//         //currentTimes: [0, 4, 6, 11, 18, 22, 28, 37, 43, 52, 57, 60 + 5, 60 + 15, 60 + 22, 60 + 26, 60 + 28, 60 + 34, 60 + 39, 60 + 46, 60 + 56, 120 + 2, 120 + 6, 120 + 11]
+//         currentTimes: [0, 4.2275, 6.198, 11.35, 17.5575, 22.351, 27.9375, 36.4785, 43.236, 52.126, 57.196, 65.085, 75.112, 82.3675, 85.949, 88.3425, 93.78, 98.8585, 105.7935, 112.13, 115.6695, 122.6665, 125.896]
+//     }, {
+//         audioFileFullPath: "./audio/blink_01.mp3",
+//         currentTimes: [0, 3, 7, 12, 16, 24, 27, 33, 39, 45, 50, 56, 60 + 2, 60 + 11, 60 + 16, 60 + 24, 60 + 35, 60 + 42],
+//     }, {
+//         audioFileFullPath: './audio/blink_02.mp3',
+//         currentTimes: [0, 3, 6, 10, 12, 15, 18, 21, 25, 32, 35, 38, 41, 45, 48, 50, 53, 56, 60 + 0, 60 + 4, 60 + 8, 60 + 12, 60 + 15, 60 + 20, 60 + 24, 60 + 29, 60 + 33, 60 + 37],
+//     }, {
+//     //     audioFileFullPath: './audio/blink_10.mp3',
+//     //     currentTimes: [0, 3, 6, 9, 14, 19, 25, 33, 41, 46, 50, 55.5, 59.5, 60 + 3, 60 + 7, 60 + 13, 60 + 17, 60 + 24, 60 + 32, 60 + 40, 60 + 43, 60 + 47.5, 60 + 52, 60 + 58, 120 + 0.5, 120 + 4, 120 + 10]
+//     // }, {
+//         audioFileFullPath: './audio/blink_11.mp3',
+//         currentTimes: [0, 3, 10, 16, 21, 26, 34, 40, 46, 49, 53, 60, 60 + 5, 60 + 9, 60 + 18, 60 + 22, 60 + 29, 60 + 39, 60 + 43, 60 + 46, 60 + 51, 60 + 56]
+//     }
+// ]
 
 const FactoryAudio = function () {
     let audio = document.createElement('audio'); 
@@ -30,8 +49,8 @@ const FactoryAudio = function () {
     }
 
     function update_title(audioFileFullPath, currentTime, duration) {
-        const title = document.querySelector("#title");
-        title.innerHTML = `${audioFileFullPath}: ${currentTime} (${duration}seconds)`
+        // const title = document.querySelector("#title");
+        // title.innerHTML = `${audioFileFullPath}: ${currentTime} (${duration}seconds)`
     }
     
     function play() {
@@ -108,9 +127,10 @@ const FactoryAudio = function () {
     // document.addEventListener("click", pause_play);
 
     document.querySelector(".button1").addEventListener("click", pause_play)
-    document.querySelector(".button2").addEventListener("click", previousTrack)
-    document.querySelector(".button3").addEventListener("click", nextTrack)
-    document.querySelector(".button4").addEventListener("click", playNext)
+    document.querySelector(".button2").addEventListener("click", playPrevious)    
+    document.querySelector(".button3").addEventListener("click", previousTrack)
+    document.querySelector(".button4").addEventListener("click", nextTrack)
+    document.querySelector(".button5").addEventListener("click", playNext)
 
     document.onkeydown = function (event) {
         const callback = {

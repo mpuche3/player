@@ -7,15 +7,18 @@
   <title>Big Button Website</title>
 </head>
 <body>
+  <div> 
+    <p id = "title" display = "None" style="color:white"> <p/>
+  </div>
   <div class="container">
-    <div> 
-        <p id = "title" style="color:white"> <p/>
-    </div>
     <button class="button button1">Button 1</button>
     <div class="button-row">
       <button class="button button2">Button 2</button>
-      <button class="button button3">Button 3</button>
-      <button class="button button4">Button 4</button>
+      <div class="button-col">
+        <button class="button button3">Button 3</button>
+        <button class="button button4">Button 4</button>
+      </div>
+      <button class="button button5">Button 5</button>
     </div>
   </div>
   <script src = "./script.js"></script>
