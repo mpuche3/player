@@ -24,8 +24,8 @@ const FactoryAudio = function () {
     }
 
     function update_title(audioFileFullPath, currentTime, duration) {
-        // const title = document.querySelector("#title");
-        // title.innerHTML = `${audioFileFullPath}: ${currentTime} (${duration}seconds)`
+        const title = document.querySelector("body > div.container > button");
+        title.innerHTML = `${audioFileFullPath}: ${currentTime} (${duration}seconds)`
     }
     
     function play() {
