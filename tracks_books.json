@@ -1,15 +1,103 @@
 [
     {
-        "currentTimes": [0, 0.408, 2.587, 14.091, 25.143, 29.733, 37.245, 46.376, 57.437, 64.517, 68.246, 71.915, 76.438, 84.038, 90.112, 93.903, 97.635, 108.906, 113.832, 121.387, 126.596, 130.839, 135.446, 143.146, 150.348, 155.208, 167.28, 175.567, 187.504, 199.112, 200.747, 204.509, 210.887, 221.212, 232.981, 243], 
-        "audioFileFullPath": "./audio/books/B009/B009C007_echo.mp3"        
-    }, {
-        "currentTimes": [0, 2.598, 12.436, 23.159, 30.696, 32.59, 37.243, 40.674, 43.924, 50.499, 59.591, 64.384, 70.355, 77.926, 84.764, 93.861, 101.596, 105.875, 109.997, 117.126, 123.795, 129.193, 134.525, 145.123, 150.872, 156.512, 160.039, 164.92, 168.885, 172.562, 180.076, 182.294, 193.239, 206.114, 215.027, 220],
-        "audioFileFullPath": "./audio/books/B001/B001C001_echo.mp3"
-    }, {
-        "currentTimes": [0, 9.188, 17.885, 25.372, 30.468, 36.099, 40.926, 52.52, 60.761, 71.719, 77.513, 82.479, 86.278, 94.857, 101.173, 104.627, 112.403, 122.13, 133.725, 140.318, 145.332, 150.976, 163.667, 169.736, 183.013, 187.683, 190.785, 192.879, 194.704, 198.488, 203.122, 206.318, 212.102, 219.129, 223.413, 231.646, 235.478, 236.8, 240.703, 246.119, 253.863, 260.766, 264.753, 276],
-        "audioFileFullPath": "./audio/books/B001/B001C002_echo.mp3"
-    }, {
-        "currentTimes": [0, 1.006, 7.805, 15.928, 25.313, 36.638, 44.437, 57.397, 62.669, 68.811, 75.396, 90],
-        "audioFileFullPath": "./audio/books/B001/B001C000_echo.mp3"
+        "audioFileFullPath": "./audio/books/B009/B009C007_echo.mp3",
+        "currentTimes": [
+            {
+                "ms": 0,
+                "tran": "ðə ɡrǽnfɒ̀ðər pǽrədɒ̀ks."
+            },
+            {
+                "ms": 2.587,
+                "tran": "ðə ɡrǽnfɒ̀ðər pǽrədɒ̀ks ᵻz ə θɔ́t əkspɛ́rᵻmənt thət tʌ́ʧᵻz əpɒ́n ðə kəmplɛ́ksᵻtiz ənd kɒ̀ntrədɪ́kʃənz əsóʊsièɪtᵻd wᵻð táɪm trǽvəl, pɑ̀rtɪ́kjələrli wɛ́n ᵻt ɪ̀nvɒ́lvz ɔ́ltərᵻŋ pǽst əvɛ́nts."
+            },
+            {
+                "ms": 14.091,
+                "tran": "æt ᵻts kɔ́r, ðə pǽrədɒ̀ks prɛ́zənts ə sənǽrioʊ wɛ́r ə táɪm trǽvələr ɡóʊz bǽk ᵻn táɪm ənd kɒ́zᵻz ðə dɛ́θ əv ðɛr ɡrǽnfɒ̀ðər bìfɔ́r ðə táɪm trǽvələrz pɛ́rənt ᵻz kənsívd."
+            },
+            {
+                "ms": 25.143,
+                "tran": "ðᵻs ǽkʃən símᵻŋli méɪks ðə táɪm trǽvələrz óʊn ᵻɡzɪ́stəns ɪ̀mpɒ́sᵻbəl, æz ðɛr pɛ́rənt wʊd nɛ́vər həv bᵻn bɔ́rn, ənd ðʌs, ðeɪ kʊ́d nɒt həv trǽvəld bǽk ᵻn táɪm tə kəmɪ́t ðᵻs ǽkt ᵻn ðə fɜ́rst pléɪs."
+            },
+            {
+                "ms": 37.245,
+                "tran": "ðə pǽrədɒ̀ks sɜ́rvz æz ə fǽsᵻnèɪtᵻŋ ɛ̀kspləréɪʃən əv ðə kɒ́nsəkwɛ̀nsᵻz əv táɪm trǽvəl ɒn kɔ̀zɒ́lᵻti ənd ðə néɪʧər əv rìǽlᵻti ɪ̀tsɛ́lf. "
+            },
+            {
+                "ms": 46.376,
+                "tran": "ðə ɔ́rᵻʤᵻnz əv ðə ɡrǽnfɒ̀ðər pǽrədɒ̀ks ɑr nɒt prəsáɪsli dɒ́kjəmɛ̀ntᵻd, bʌt ᵻt həz bᵻn ə stéɪpəl ᵻn dᵻskʌ́ʃənz əbaʊt ðə θìərɛ́tᵻkəl ɪ̀mplᵻkéɪʃənz əv táɪm trǽvəl fɔr mɛ́ni jɪ́rz."
+            },
+            {
+                "ms": 57.437,
+                "tran": "ᵻt ɛnkǽpsjʊleɪts ðə kɒ́nflᵻkt bitwín ðə kɒ́nsɛpt əv frí wᵻl ənd ðə dətɜ̀rmᵻnɪ́stᵻk néɪʧər əv ðə júnᵻvɜ̀rs. "
+            },
+            {
+                "ms": 64.517,
+                "tran": "ᵻf wʌ́n əsúmz thət táɪm trǽvəl tə ðə pǽst ᵻz pɒ́sᵻbəl, ᵻt ɪ̀ntrədúsᵻz ðə pɒ̀sᵻbɪ́lᵻti əv ʧéɪnʤᵻŋ pǽst əvɛ́nts, wɪ́ʧ ᵻn tɜ́rn kʊ́d prəvɛ́nt ðə táɪm trǽvələrz ʤɜ́rni frəm ɛ́vər hǽpənᵻŋ."
+            },
+            {
+                "ms": 76.438,
+                "tran": "ðᵻs kriéɪts ə lúp əv əvɛ́nts thət kǽnɒt lɒ́ʤᵻkli kòʊᵻɡzɪ́st, háɪlàɪtᵻŋ ðə pæ̀rədɒ́ksᵻkəl néɪʧər əv sʌʧ ə sənǽrioʊ. "
+            },
+            {
+                "ms": 84.038,
+                "tran": "sɛ́vərəl ɪ̀ntɜ̀rprᵻtéɪʃənz ənd səlúʃənz həv bᵻn prəpóʊzd tə rizɒ́lv ðə ɡrǽnfɒ̀ðər pǽrədɒ̀ks, iʧ wᵻð ᵻts óʊn sɛ́t əv əsʌ́mpʃənz ənd ɪ̀mplᵻkéɪʃənz. "
+            },
+            {
+                "ms": 93.903,
+                "tran": "wʌ́n əpróʊʧ ᵻz ðə novikov:nəvíkəv sɛ́lf-kənsɪ́stənsi prɪ́nsᵻpəl, wɪ́ʧ pɒ́zᵻts thət ɛ́ni ǽkʃənz téɪkən baɪ ə táɪm trǽvələr ᵻn ðə pǽst wɜ́r ɔ́lwèɪz pɑ́rt əv hɪ́stəri ənd ðʌs kǽnɒt ʧéɪnʤ ðə pǽst ᵻn ə weɪ thət wʊd prəvɛ́nt ðə táɪm trǽvələrz ᵻɡzɪ́stəns. "
+            },
+            {
+                "ms": 108.906,
+                "tran": "əkɔ́rdᵻŋ tə ðᵻs prɪ́nsᵻpəl, ðə júnᵻvɜ̀rs’z táɪmlaɪn ᵻz sɛ́lf-kənsɪ́stənt, ənd ɛ́ni ətɛ́mpts tə ɔ́ltər pǽst əvɛ́nts ᵻn ə weɪ thət wʊd kriéɪt ə pǽrədɒ̀ks wʊd sʌ́mhàʊ bi prəvɛ́ntᵻd frəm hǽpənᵻŋ. "
+            },
+            {
+                "ms": 121.387,
+                "tran": "ənʌ́ðər pərspɛ́ktᵻv ɪ̀nvɒ́lvz ðə kɒ́nsɛpt əv mʌ́ltᵻpəl ɔr pɛ́rəlɛ̀l júnᵻvɜ̀rsᵻz, æz səʤɛ́stᵻd baɪ ðə many-worlds:mǽniwɜ̀rrldz ɪ̀ntɜ̀rprᵻtéɪʃən əv kwɒ́ntəm məkǽnᵻks."
+            },
+            {
+                "ms": 130.839,
+                "tran": "ᵻn ðᵻs vjú, wɛ́n ðə táɪm trǽvələr ɡóʊz bǽk ənd ɔ́ltərz ðə pǽst, ðeɪ ɑr nɒt ʧéɪnʤᵻŋ ðɛr ərɪ́ʤᵻnəl táɪmlaɪn bʌt ɪ̀nstɛ́d kriéɪtᵻŋ ə brǽnʧᵻŋ táɪmlaɪn ᵻn wɪ́ʧ ðə ɔ́ltərd əvɛ́nts əkɜ́r. "
+            },
+            {
+                "ms": 143.146,
+                "tran": "ðᵻs mínz thət ðə táɪm trǽvələrz ərɪ́ʤᵻnəl táɪmlaɪn, wɛ́r ðɛr ɡrǽnfɒ̀ðər wɒz nɒt kɪ́ld baɪ ðɛm, stɪ́l ᵻɡzɪ́sts, ənd ðʌs ðɛr ᵻɡzɪ́stəns ᵻz nɒt θrɛ́tənd baɪ ðɛr ǽkʃənz ᵻn ðə ɔ́ltərnət táɪmlaɪn. "
+            },
+            {
+                "ms": 155.208,
+                "tran": "ðᵻs ɪ̀ntɜ̀rprᵻtéɪʃən əláʊz fɔr ðə kòʊᵻɡzɪ́stəns əv frí wᵻl ənd ðə dətɜ̀rmᵻnɪ́stᵻk néɪʧər əv ðə júnᵻvɜ̀rs, æz iʧ dəsɪ́ʒən tə ɔ́ltər ðə pǽst rəzʌ́lts ᵻn ə nu, pɛ́rəlɛ̀l júnᵻvɜ̀rs. "
+            },
+            {
+                "ms": 167.28,
+                "tran": "ðə ɡrǽnfɒ̀ðər pǽrədɒ̀ks ɔ́lsoʊ réɪzᵻz proʊfáʊnd fɪ̀ləsɒ́fᵻkəl kwɛ́sʧənz əbaʊt ðə néɪʧər əv táɪm, kɔ̀zɒ́lᵻti, ənd aɪdɛ́ntᵻtì. "
+            },
+            {
+                "ms": 175.567,
+                "tran": "ᵻt ʧǽlənʤᵻz aʊər ʌ̀ndərstǽndᵻŋ əv táɪm æz ə lɪ́niər síkwəns əv əvɛ́nts ənd fɔ́rsᵻz ʌs tə kənsɪ́dər ðə ɪ̀mplᵻkéɪʃənz əv ǽkʃənz thət kən pətɛ́nʃəli əréɪs ðə kəndɪ́ʃənz əv ðɛr óʊn pɒ̀sᵻbɪ́lᵻti."
+            },
+            {
+                "ms": 187.504,
+                "tran": "fɜ́rðərmɔ̀r, ᵻt prɒ́mpts rəflɛ́kʃən ɒn ðə ɛ́θᵻkəl kənsɪ̀dəréɪʃənz əv táɪm trǽvəl, æz ðə əbɪ́lᵻti tə ɔ́ltər pǽst əvɛ́nts kʊ́d həv ʌ̀nfɔrsín ənd pətɛ́nʃəli dᵻzǽstrəs kɒ́nsəkwɛ̀nsᵻz. "
+            },
+            {
+                "ms": 199.112,
+                "tran": "ᵻn kənklúʒən, ðə ɡrǽnfɒ̀ðər pǽrədɒ̀ks ᵻz mɔr ðʌn ə sɪ́mpəl lɒ́ʤᵻkəl pʌ́zəl;"
+            },
+            {
+                "ms": 204.509,
+                "tran": "ᵻt ᵻz ə ɡéɪtwèɪ ᵻntu dípər kɒ̀ntəmpléɪʃən əv táɪm, ᵻɡzɪ́stəns, ənd ðə fǽbrᵻk əv rìǽlᵻti."
+            },
+            {
+                "ms": 210.887,
+                "tran": "wáɪl ᵻt meɪ nɛ́vər bi pɒ́sᵻbəl tə fɪ́zᵻkəli trǽvəl bǽk ᵻn táɪm tə tɛ́st ðə pǽrədɒ̀ks, əksplɔ́rᵻŋ ᵻts ɪ̀mplᵻkéɪʃənz hɛ́lps əkspǽnd aʊər ʌ̀ndərstǽndᵻŋ əv ðə júnᵻvɜ̀rs ənd aʊər pléɪs wᵻðɪ́n ᵻt. "
+            },
+            {
+                "ms": 221.212,
+                "tran": "wɛ́ðər θrú ðə lɛ́nz əv fɪ́zᵻks, fᵻlɒ́səfi, ɔr fɪ́kʃən, ðə ɡrǽnfɒ̀ðər pǽrədɒ̀ks rəméɪnz ə kəmpɛ́lᵻŋ ɛ̀kspləréɪʃən əv ðə mɪ́stəriz əv táɪm trǽvəl ənd ðə ɪ́ntrᵻkət dǽns əv kɒ́z ənd əfɛ́kt."
+            },
+            {
+                "ms": 232.981,
+                "tran": ""
+            }
+        ]
     }
 ]

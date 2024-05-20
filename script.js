@@ -12,7 +12,7 @@ const tracks = JSON.parse(xhr.responseText);
 const FactoryAudio = function () {
     let audio = document.createElement('audio'); 
     let itracks = 0;
-    let iCurrentTimes = 0;
+    let iCurrentTimes = -1;
     let timeoutId_play;
     let timeoutId_pause;
     let promisePlay;
@@ -22,21 +22,27 @@ const FactoryAudio = function () {
         return status
     }
 
-    function update_title(audioFileFullPath, currentTime, duration) {
+    function update_title(iCurrentTimes) {
+        const i = iCurrentTimes
+        const book_chapter = tracks[itracks]["audioFileFullPath"].split("/").slice(-1)[0].split("_")[0]
+        const text = tracks[itracks]["currentTimes"][i]["tran"]
+        const currentTime = tracks[itracks]["currentTimes"][i]["ms"]
+        const nextTime = tracks[itracks]["currentTimes"][i + 1]["ms"]
+        const duration = nextTime - currentTime
         const title = document.querySelector("body > div.container > button");
-        title.innerHTML = `${audioFileFullPath}: ${currentTime} (${duration}seconds)`
+        title.innerHTML = `${book_chapter}: </br> ${currentTime.toFixed(3).padStart(7, '0')} [${duration.toFixed(3).padStart(7, '0')}] </br> </br> ${text}`
     }
     
     function play() {
         const playbackRate = 0.8
         const additionalTimeintheloop = 2000
         const audioFileFullPath = tracks[itracks]["audioFileFullPath"];
-        const currentTime = tracks[itracks]["currentTimes"][iCurrentTimes];
-        const nextTime = tracks[itracks]["currentTimes"][iCurrentTimes + 1];
+        const currentTime = tracks[itracks]["currentTimes"][iCurrentTimes]["ms"];
+        const nextTime = tracks[itracks]["currentTimes"][iCurrentTimes + 1]["ms"];
         const duration = nextTime - currentTime;
         clearTimeout(timeoutId_pause);
         clearTimeout(timeoutId_play);
-        update_title(audioFileFullPath, currentTime, duration);
+        update_title(iCurrentTimes);
         // WTF: 
         // If audio.scr is set after audio.currentTime, 
         // then audio.currentTime will be set to zero.
@@ -72,10 +78,11 @@ const FactoryAudio = function () {
 
     function playNext() {
         console.log("NEXT")
-        iCurrentTimes += 1;
+        iCurrentTimes += 1;        
         if (iCurrentTimes === tracks[itracks]["currentTimes"].length - 1) {
             nextTrack()
         };
+
         play();
     }
     
@@ -88,14 +95,14 @@ const FactoryAudio = function () {
     function nextTrack() {
         iCurrentTimes = 0;
         itracks += 1;
-        if (itracks === tracks.len) x = 0;
+        if (itracks === tracks.length) {itracks = 0};
         play();
     }
 
     function previousTrack() {
         iCurrentTimes = 0;
         itracks -= 1;
-        if (itracks < 0) x = 0;
+        if (itracks < 0) {itracks = 0};
         play();
     }
 
