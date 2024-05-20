@@ -41,7 +41,7 @@ const FactoryAudio = function () {
         // then audio.currentTime will be set to zero.
         audio.src = audioFileFullPath;
         audio.currentTime = currentTime;
-        audio.playbackRate = playbackRate; // Add this line
+        audio.playbackRate = playbackRate;
         promisePlay = audio.play();
         status = "PLAYING";
         timeoutId_pause = setTimeout(_ => {
