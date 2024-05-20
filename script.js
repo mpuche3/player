@@ -10,7 +10,6 @@ xhr.send();
 const tracks = JSON.parse(xhr.responseText);
 
 const FactoryAudio = function () {
-    const playbackRate = 0.8
     let audio = document.createElement('audio'); 
     let itracks = 0;
     let iCurrentTimes = 0;
@@ -29,6 +28,8 @@ const FactoryAudio = function () {
     }
     
     function play() {
+        const playbackRate = 0.8
+        const additionalTimeintheloop = 2000
         const audioFileFullPath = tracks[itracks]["audioFileFullPath"];
         const currentTime = tracks[itracks]["currentTimes"][iCurrentTimes];
         const nextTime = tracks[itracks]["currentTimes"][iCurrentTimes + 1];
@@ -42,17 +43,17 @@ const FactoryAudio = function () {
         audio.src = audioFileFullPath;
         audio.currentTime = currentTime;
         audio.playbackRate = playbackRate;
+        audio.pause();
         promisePlay = audio.play();
         status = "PLAYING";
         timeoutId_pause = setTimeout(_ => {
             promisePlay.then(_ => {
                 audio.pause();
             });
-        }, duration * 1000 * (1 / playbackRate) + 1000)
-        const additionalTimeintheloop = 1000;
+        }, duration * 1000 * (1 / playbackRate))
         timeoutId_play = setTimeout(_ => {
             play();
-        }, duration * 1000 + additionalTimeintheloop);
+        }, duration * 1000 * (1 / playbackRate) + additionalTimeintheloop);
     }
 
     function pause_play() {
@@ -72,13 +73,15 @@ const FactoryAudio = function () {
     function playNext() {
         console.log("NEXT")
         iCurrentTimes += 1;
-        if (iCurrentTimes === tracks[itracks]["currentTimes"].length) iCurrentTimes = 0;
+        if (iCurrentTimes === tracks[itracks]["currentTimes"].length - 1) {
+            nextTrack()
+        };
         play();
     }
     
     function playPrevious() {
         iCurrentTimes -= 1;
-        if (iCurrentTimes < 0) iCurrentTimes = 0;
+        if (iCurrentTimes < 0) {iCurrentTimes = 0};
         play();
     }
 
