@@ -3,13 +3,29 @@
 // git push
 // git status
 
-const xhr = new XMLHttpRequest();
-const url = "tracks_books.json";
-xhr.open("GET", url, false);
-xhr.send();
-const tracks = JSON.parse(xhr.responseText);
+// const xhr = new XMLHttpRequest();
+// const url = "./transcriptions/books/B001/B001C002.json";
+// xhr.open("GET", url, false);
+// xhr.send();
+// const tracks = JSON.parse(xhr.responseText);
+
+function get_tracks(){
+    const urls = [
+        "./transcriptions/books/B001/B001C002.json",
+        "./transcriptions/books/B009/B009C007.json",
+    ]
+    let tracks = []
+    for (const url of urls) {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", url, false);
+        xhr.send();
+        tracks = tracks.concat(JSON.parse(xhr.responseText));
+    }
+    return tracks
+}
 
 const FactoryAudio = function () {
+    const tracks = get_tracks()
     let audio = document.createElement('audio'); 
     let itracks = 0;
     let iCurrentTimes = -1;
@@ -24,13 +40,15 @@ const FactoryAudio = function () {
 
     function update_title(iCurrentTimes) {
         const i = iCurrentTimes
-        const book_chapter = tracks[itracks]["audioFileFullPath"].split("/").slice(-1)[0].split("_")[0]
+        const str_i = String(i).padStart(3, '0')
+        const book_chapter = tracks[itracks]["audioFileFullPath"].split("/").slice(-1)[0].split("_")[0] + "S" + str_i
         const text = tracks[itracks]["currentTimes"][i]["tran"]
         const currentTime = tracks[itracks]["currentTimes"][i]["ms"]
         const nextTime = tracks[itracks]["currentTimes"][i + 1]["ms"]
         const duration = nextTime - currentTime
+        const line_2 = "" //+  `${currentTime.toFixed(3).padStart(7, '0')} [${duration.toFixed(3).padStart(7, '0')}]`
         const title = document.querySelector("body > div.container > button");
-        title.innerHTML = `${book_chapter}: </br> ${currentTime.toFixed(3).padStart(7, '0')} [${duration.toFixed(3).padStart(7, '0')}] </br> </br> ${text}`
+        title.innerHTML = `${book_chapter} </br> ${line_2} </br> </br> ${text}`
     }
     
     function play() {
