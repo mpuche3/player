@@ -11,6 +11,7 @@
 
 function get_tracks(){
     const urls = [
+        "./transcriptions/books/B001/B001C000.json",
         "./transcriptions/books/B001/B001C002.json",
         "./transcriptions/books/B009/B009C007.json",
     ]
@@ -46,7 +47,7 @@ const FactoryAudio = function () {
         const currentTime = tracks[itracks]["currentTimes"][i]["ms"]
         const nextTime = tracks[itracks]["currentTimes"][i + 1]["ms"]
         const duration = nextTime - currentTime
-        const line_2 = "" //+  `${currentTime.toFixed(3).padStart(7, '0')} [${duration.toFixed(3).padStart(7, '0')}]`
+        const line_2 = "" +  `${currentTime.toFixed(3).padStart(7, '0')} [${duration.toFixed(3).padStart(7, '0')}]`
         const title = document.querySelector("body > div.container > button");
         title.innerHTML = `${book_chapter} </br> ${line_2} </br> </br> ${text}`
     }
