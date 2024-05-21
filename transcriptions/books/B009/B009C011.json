@@ -4,217 +4,142 @@
         "currentTimes": [
             {
                 "ms": 0,
-                "duration": null,
+                "duration": 0.41,
                 "tran": ""
             },
             {
-                "ms": 0.41,
-                "duration": null,
+                "ms": 2.182,
+                "duration": 9.514,
                 "tran": ""
             },
             {
-                "ms": 2.188,
-                "duration": null,
+                "ms": 11.696,
+                "duration": 8.192000000000002,
                 "tran": ""
             },
             {
-                "ms": 6.982,
-                "duration": null,
+                "ms": 19.888,
+                "duration": 10.335999999999999,
                 "tran": ""
             },
             {
-                "ms": 11.703,
-                "duration": null,
+                "ms": 30.224,
+                "duration": 11.873999999999999,
                 "tran": ""
             },
             {
-                "ms": 18.004,
-                "duration": null,
+                "ms": 42.098,
+                "duration": 12.932000000000002,
                 "tran": ""
             },
             {
-                "ms": 19.904,
-                "duration": null,
+                "ms": 55.03,
+                "duration": 9.037999999999997,
                 "tran": ""
             },
             {
-                "ms": 25.609,
-                "duration": null,
+                "ms": 64.068,
+                "duration": 15.049000000000007,
                 "tran": ""
             },
             {
-                "ms": 30.256,
-                "duration": null,
+                "ms": 79.117,
+                "duration": 11.004999999999995,
                 "tran": ""
             },
             {
-                "ms": 42.099,
-                "duration": null,
+                "ms": 90.122,
+                "duration": 7.658000000000001,
                 "tran": ""
             },
             {
-                "ms": 55.055,
-                "duration": null,
+                "ms": 97.78,
+                "duration": 6.504000000000005,
                 "tran": ""
             },
             {
-                "ms": 59.907,
-                "duration": null,
+                "ms": 104.284,
+                "duration": 11.430999999999997,
                 "tran": ""
             },
             {
-                "ms": 64.073,
-                "duration": null,
+                "ms": 115.715,
+                "duration": 11.929999999999993,
                 "tran": ""
             },
             {
-                "ms": 71.919,
-                "duration": null,
+                "ms": 127.645,
+                "duration": 9.690000000000012,
                 "tran": ""
             },
             {
-                "ms": 79.13,
-                "duration": null,
+                "ms": 137.335,
+                "duration": 8.536000000000001,
                 "tran": ""
             },
             {
-                "ms": 90.127,
-                "duration": null,
+                "ms": 145.871,
+                "duration": 12.442999999999984,
                 "tran": ""
             },
             {
-                "ms": 97.79,
-                "duration": null,
+                "ms": 158.314,
+                "duration": 7.359000000000009,
                 "tran": ""
             },
             {
-                "ms": 104.274,
-                "duration": null,
+                "ms": 165.673,
+                "duration": 8.509999999999991,
                 "tran": ""
             },
             {
-                "ms": 107.696,
-                "duration": null,
+                "ms": 174.183,
+                "duration": 2.8870000000000005,
                 "tran": ""
             },
             {
-                "ms": 115.724,
-                "duration": null,
+                "ms": 177.07,
+                "duration": 9.28200000000001,
                 "tran": ""
             },
             {
-                "ms": 119.363,
-                "duration": null,
+                "ms": 186.352,
+                "duration": 12.070999999999998,
                 "tran": ""
             },
             {
-                "ms": 122.708,
-                "duration": null,
+                "ms": 198.423,
+                "duration": 13.575999999999993,
                 "tran": ""
             },
             {
-                "ms": 127.719,
-                "duration": null,
+                "ms": 211.999,
+                "duration": 10.350999999999999,
                 "tran": ""
             },
             {
-                "ms": 137.38,
-                "duration": null,
+                "ms": 222.35,
+                "duration": 8.221000000000004,
                 "tran": ""
             },
             {
-                "ms": 145.911,
-                "duration": null,
+                "ms": 230.571,
+                "duration": 15.370000000000005,
                 "tran": ""
             },
             {
-                "ms": 154.685,
-                "duration": null,
+                "ms": 245.941,
+                "duration": 11.904000000000025,
                 "tran": ""
             },
             {
-                "ms": 158.319,
-                "duration": null,
+                "ms": 257.845,
+                "duration": 12.08499999999998,
                 "tran": ""
             },
             {
-                "ms": 165.708,
-                "duration": null,
-                "tran": ""
-            },
-            {
-                "ms": 174.224,
-                "duration": null,
-                "tran": ""
-            },
-            {
-                "ms": 177.077,
-                "duration": null,
-                "tran": ""
-            },
-            {
-                "ms": 186.397,
-                "duration": null,
-                "tran": ""
-            },
-            {
-                "ms": 190.555,
-                "duration": null,
-                "tran": ""
-            },
-            {
-                "ms": 198.427,
-                "duration": null,
-                "tran": ""
-            },
-            {
-                "ms": 203.17,
-                "duration": null,
-                "tran": ""
-            },
-            {
-                "ms": 212.006,
-                "duration": null,
-                "tran": ""
-            },
-            {
-                "ms": 216.359,
-                "duration": null,
-                "tran": ""
-            },
-            {
-                "ms": 222.36,
-                "duration": null,
-                "tran": ""
-            },
-            {
-                "ms": 230.586,
-                "duration": null,
-                "tran": ""
-            },
-            {
-                "ms": 236.036,
-                "duration": null,
-                "tran": ""
-            },
-            {
-                "ms": 241.445,
-                "duration": null,
-                "tran": ""
-            },
-            {
-                "ms": 245.975,
-                "duration": null,
-                "tran": ""
-            },
-            {
-                "ms": 257.842,
-                "duration": null,
-                "tran": ""
-            },
-            {
-                "ms": 269.937,
-                "duration": null,
+                "ms": 269.93,
+                "duration": 0.7450000000000045,
                 "tran": ""
             },
             {
