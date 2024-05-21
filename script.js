@@ -2,18 +2,17 @@
 // git commit -m "message"
 // git push
 // git status
-
-// const xhr = new XMLHttpRequest();
-// const url = "./transcriptions/books/B001/B001C002.json";
-// xhr.open("GET", url, false);
-// xhr.send();
-// const tracks = JSON.parse(xhr.responseText);
+// clear
 
 function get_tracks(){
     const urls = [
         "./transcriptions/books/B001/B001C000.json",
         "./transcriptions/books/B001/B001C002.json",
         "./transcriptions/books/B009/B009C007.json",
+        "./transcriptions/books/B009/B009C008.json",
+        "./transcriptions/books/B009/B009C009.json",
+        "./transcriptions/books/B009/B009C010.json",
+        "./transcriptions/books/B009/B009C011.json",
     ]
     let tracks = []
     for (const url of urls) {
