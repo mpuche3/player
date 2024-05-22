@@ -5,217 +5,167 @@
             {
                 "ms": 0,
                 "duration": 1.766,
-                "tran": ""
+                "tran": "pɒ̀lìnóʊmiəl rəɡrɛ́ʃən."
             },
             {
                 "ms": 1.766,
                 "duration": 7.962,
-                "tran": ""
+                "tran": "ᵻn sɜ́rtən sənǽrioʊz, ə lᵻ̀niər rəléɪʃənʃᵻ̀p bitwín prədᵻ̀ktərz ənd ðə áʊtkʌ̀m vɛ́riəbəl meɪ nɒt bi ðə bɛ́st fᵻ̀t fɔr ðə déɪtə. "
             },
             {
                 "ms": 9.728,
                 "duration": 7.273999999999999,
-                "tran": ""
+                "tran": "ríəlwɜ̀rld fənɒ́mənə fríkwəntli həv ə mɔr kɒ́mplɛks strʌ́kʧər, sʌʧ æz ə kɜ́rv ɔr ə sɪ́riz əv píks ənd vǽliz."
             },
             {
                 "ms": 17.002,
                 "duration": 14.833000000000002,
-                "tran": ""
+                "tran": "pɒ̀lìnóʊmiəl rəɡrɛ́ʃən ᵻz ən əkstɛ́nʃən əv lᵻ̀niər rəɡrɛ́ʃən thət əláʊz fɔr ðiz mɔr kɒ́mplɛks rəléɪʃənʃᵻ̀ps baɪ ᵻ̀ntrədúsᵻŋ páʊərz əv ðə ərᵻ̀ʤᵻnəl prədᵻ̀ktər vɛ́riəbəlz ᵻntu ðə mɒ́dəl. pɒ̀lìnóʊmiəl rəɡrɛ́ʃən’z ɡóʊl rəméɪnz ðə séɪm æz ᵻn lᵻ̀niər rəɡrɛ́ʃən:"
             },
             {
                 "ms": 31.835,
                 "duration": 3.932000000000002,
-                "tran": ""
+                "tran": "tə fáɪnd ðə bɛ́st-fᵻ̀tᵻŋ mɒ́dəl thət mᵻ̀nᵻmàɪzᵻz ðə rᵻzᵻ̀ʤuəlz,"
             },
             {
                 "ms": 35.767,
                 "duration": 3.6439999999999984,
-                "tran": ""
+                "tran": "ɔr ðə dᵻ̀fərəns bitwín ðə ǽkʧəl ənd prədᵻ̀ktᵻd áʊtkʌ̀mz."
             },
             {
                 "ms": 39.411,
                 "duration": 6.1030000000000015,
-                "tran": ""
+                "tran": "hàʊɛ́vər, ᵻ̀nstɛ́d əv fᵻ̀tᵻŋ ə stréɪt láɪn tə ðə déɪtə, pɒ̀lìnóʊmiəl rəɡrɛ́ʃən fᵻ̀ts ə kɜ́rv."
             },
             {
                 "ms": 45.514,
                 "duration": 3.7749999999999986,
-                "tran": ""
+                "tran": "ᵻn ðə sᵻ̀mpləst kéɪs əv ə sᵻ̀ŋɡəl prədᵻ̀ktər vɛ́riəbəl x,"
             },
             {
                 "ms": 49.289,
                 "duration": 6.981999999999999,
-                "tran": ""
-            },
-            {
-                "ms": 56.271,
-                "duration": 0.8689999999999998,
-                "tran": ""
+                "tran": "ə sɛ́kənd-dᵻɡrí pɒ̀lìnóʊmiəl rəɡrɛ́ʃən mɒ́dəl wʊd lʊ́k láɪk ðᵻs: y = θ0 + θ1x + θ2x^2"
             },
             {
                 "ms": 57.14,
                 "duration": 2.6850000000000023,
-                "tran": ""
+                "tran": "ðᵻs əkwéɪʒən rɛ̀prəzɛ́nts ə pɛ̀rəbɒ́lᵻk rəléɪʃənʃᵻ̀p."
             },
             {
                 "ms": 59.825,
                 "duration": 7.325000000000003,
-                "tran": ""
+                "tran": "ᵻf wi wɔ́ntᵻd tə mɒ́dəl ə kjúbᵻk rəléɪʃənʃᵻ̀p, wi wʊd ǽd ənʌ́ðər tɜ́rm: y = θ0 + θ1x + θ2x^2 + θ3*x^3"
             },
             {
                 "ms": 67.15,
                 "duration": 8.433999999999997,
-                "tran": ""
+                "tran": "iʧ ədᵻ̀ʃənəl dᵻɡrí ǽdz ə páʊər əv x tə ðə əkwéɪʒən, wᵻ̀ʧ ᵻ̀nkrìsᵻz ðə flɛ̀ksəbᵻ̀lᵻti əv ðə mɒ́dəl, ɛnéɪbəlᵻŋ ᵻt tə fᵻ̀t mɔr kɒ́mplɛks pǽtərnz ᵻn ðə déɪtə."
             },
             {
                 "ms": 75.584,
                 "duration": 4.6640000000000015,
-                "tran": ""
+                "tran": "ʤəst æz lᵻ̀niər rəɡrɛ́ʃən həz ᵻts əsʌ́mpʃənz, soʊ dʌz pɒ̀lìnóʊmiəl rəɡrɛ́ʃən."
             },
             {
                 "ms": 80.248,
                 "duration": 6.120999999999995,
-                "tran": ""
+                "tran": "fɔr ᵻ̀nstəns, ᵻt stᵻ̀l əsúmz ᵻ̀ndəpɛ́ndəns əv ɒ̀bzərvéɪʃənz ənd nɔ́rməli dᵻstrᵻ̀bjətᵻd rᵻzᵻ̀ʤuəlz. "
             },
             {
                 "ms": 86.369,
                 "duration": 7.155000000000001,
-                "tran": ""
+                "tran": "hàʊɛ́vər, pɒ̀lìnóʊmiəl rəɡrɛ́ʃən rᵻlǽksᵻz ðə əsʌ́mpʃən əv lᵻ̀nierᵻti ənd hòʊməskᵻdæ̀stᵻ̀sᵻti (kɒ́nstənt variance). "
             },
             {
                 "ms": 93.524,
                 "duration": 5.872,
-                "tran": ""
+                "tran": "ɔ̀lðóʊ pɒ̀lìnóʊmiəl rəɡrɛ́ʃən ǽdz kəmplɛ́ksᵻti tə ðə mɒ́dəl, ᵻt mʌst bi júzd ʤudᵻ̀ʃᵻsli."
             },
             {
                 "ms": 99.396,
                 "duration": 4.197000000000003,
-                "tran": ""
+                "tran": "ðə flɛ̀ksəbᵻ̀lᵻti thət kʌ́mz wᵻð háɪər dᵻɡríz kən lɛ́d|líd tə òʊvərfᵻ̀tᵻŋ,"
             },
             {
                 "ms": 103.593,
                 "duration": 5.0,
-                "tran": ""
+                "tran": "wɛ́r ðə mɒ́dəl nɒt óʊnli kǽpʧərz ðə ʌ̀ndərláɪᵻŋ trɛ́nd bʌt ɔ́lsoʊ ðə nɔ́ᵻz ᵻn ðə déɪtə."
             },
             {
                 "ms": 108.593,
                 "duration": 3.5150000000000006,
-                "tran": ""
+                "tran": "óʊvərfᵻt mɒ́dəlz wᵻl pərfɔ́rm wɛ́l ɒn ðə tréɪnᵻŋ déɪtə"
             },
             {
                 "ms": 112.108,
                 "duration": 7.923000000000002,
-                "tran": ""
+                "tran": "bʌt pɔ́rli ɒn ʌ̀nsín déɪtə bᵻkɒ́z ðeɪ həv əsɛ́nʃəli mɛ́məràɪzd ðə tréɪnᵻŋ déɪtə rǽðər ðʌn lɜ́rnᵻŋ ðə ʌ̀ndərláɪᵻŋ pǽtərn. "
             },
             {
                 "ms": 120.031,
                 "duration": 2.2309999999999945,
-                "tran": ""
+                "tran": "tə ɡɑ́rd əɡéɪnst òʊvərfᵻ̀tᵻŋ,"
             },
             {
                 "ms": 122.262,
                 "duration": 3.405000000000001,
-                "tran": ""
+                "tran": "ᵻ̀ts ɔ́fən hɛ́lpfəl tə jus|juz tɛkníks láɪk krɔ́s-væ̀lᵻdéɪʃən,"
             },
             {
                 "ms": 125.667,
                 "duration": 3.3000000000000114,
-                "tran": ""
+                "tran": "wᵻ̀ʧ ᵻ̀nvɒ́lvz pɑrtᵻ̀ʃənᵻŋ ðə déɪtə sɛ́t ᵻntu sʌ́bsɛ̀ts,"
             },
             {
                 "ms": 128.967,
                 "duration": 4.964999999999975,
-                "tran": ""
+                "tran": "tréɪnᵻŋ ðə mɒ́dəl ɒn ə pɔ́rʃən əv ðə déɪtə, ənd vǽlᵻdèɪtᵻŋ ᵻt ɒn ðə rəméɪnᵻŋ déɪtə."
             },
             {
                 "ms": 133.932,
                 "duration": 6.872000000000014,
-                "tran": ""
+                "tran": "ðᵻs prɒ́sɛ̀s ᵻz rᵻpítᵻd wᵻð dᵻ̀fərənt pɑrtᵻ̀ʃənz əv ðə déɪtə tə əbtéɪn ən ǽvərᵻʤ mɛ́ʒər əv mɒ́dəl pərfɔ́rməns. "
             },
             {
                 "ms": 140.804,
                 "duration": 10.11699999999999,
-                "tran": ""
+                "tran": "rèɡjəlɛ̀rᵻzéɪʃən, ə tɛkník thət ᵻ̀ntrədúsᵻz ə pɛ́nəlti tɜ́rm tə ðə lɔ́s fʌ́ŋkʃən tə dᵻskɜ́rᵻʤ óʊvərli kɒ́mplɛks mɒ́dəlz, ᵻz ənʌ́ðər túl tə kɒ́mbæt òʊvərfᵻ̀tᵻŋ. "
             },
             {
                 "ms": 150.921,
                 "duration": 6.951999999999998,
-                "tran": ""
-            },
-            {
-                "ms": 157.873,
-                "duration": 3.3089999999999975,
-                "tran": ""
-            },
-            {
-                "ms": 161.182,
-                "duration": 4.024000000000001,
-                "tran": ""
-            },
-            {
-                "ms": 165.206,
-                "duration": 3.058000000000021,
-                "tran": ""
+                "tran": "ᵻn ðə kɒ́ntɛkst əv pɒ̀lìnóʊmiəl rəɡrɛ́ʃən, tú kɒ́mənli júzd rèɡjəlɛ̀rᵻzéɪʃən tɛkníks ɑr rᵻ̀ʤ rəɡrɛ́ʃən, wᵻ̀ʧ ᵻmpóʊzᵻz ə pɛ́nəlti ɒn ðə sáɪz əv ðə kòʊəfᵻ̀ʃənts, ənd lǽsu rəɡrɛ́ʃən, wᵻ̀ʧ kən ʃrᵻ̀ŋk sʌm kòʊəfᵻ̀ʃənts tə zíroʊ, əfɛ́ktᵻvli pərfɔ́rmᵻŋ vɛ́riəbəl səlɛ́kʃən. "
             },
             {
                 "ms": 168.264,
                 "duration": 4.325999999999993,
-                "tran": ""
+                "tran": "ðə əpróʊprièɪt dᵻɡrí fɔr ðə pɒ̀lìnóʊmiəl ᵻz ə krúʃəl dəsᵻ̀ʒən."
             },
             {
                 "ms": 172.59,
                 "duration": 4.902999999999992,
-                "tran": ""
-            },
-            {
-                "ms": 177.493,
-                "duration": 1.0790000000000077,
-                "tran": ""
+                "tran": "tú lóʊ, ənd ðə mɒ́dəl meɪ bi óʊvərli sᵻ̀mpləfàɪd ənd ᵻɡzᵻ̀bᵻt háɪ báɪəs (underfitting)."
             },
             {
                 "ms": 178.572,
                 "duration": 5.945999999999998,
-                "tran": ""
+                "tran": "tú háɪ, ənd ðə mɒ́dəl meɪ bᵻkʌ́m əksɛ́sᵻvli kɒ́mplɛks ənd ᵻɡzᵻ̀bᵻt háɪ vɛ́riəns (overfitting)."
             },
             {
                 "ms": 184.518,
                 "duration": 6.397999999999996,
-                "tran": ""
+                "tran": "ðə ɒ́ptᵻməl dᵻɡrí júʒəli láɪz sʌ́mwɛ̀r ᵻn ðə mᵻ̀dəl ənd kən bi dətɜ́rmᵻnd θrú tɛkníks láɪk krɔ́s-væ̀lᵻdéɪʃən. "
             },
             {
                 "ms": 190.916,
                 "duration": 2.413000000000011,
-                "tran": ""
-            },
-            {
-                "ms": 193.329,
-                "duration": 6.244,
-                "tran": ""
-            },
-            {
-                "ms": 199.573,
-                "duration": 7.030000000000001,
-                "tran": ""
-            },
-            {
-                "ms": 206.603,
-                "duration": 4.293999999999983,
-                "tran": ""
-            },
-            {
-                "ms": 210.897,
-                "duration": 9.38300000000001,
-                "tran": ""
+                "tran": "dᵻspáɪt ᵻts ənhǽnst kəmplɛ́ksᵻti, ðə ᵻ̀ntɜ̀rprᵻtéɪʃən əv ə pɒ̀lìnóʊmiəl rəɡrɛ́ʃən mɒ́dəl ᵻz lɛ́s stréɪtfɔ́rwərd ðʌn ᵻn sᵻ̀mpəl lᵻ̀niər rəɡrɛ́ʃən. wáɪl ðə kòʊəfᵻ̀ʃənts stᵻ̀l rɛ̀prəzɛ́nt ðə ʧéɪnʤ ᵻn ðə áʊtkʌ̀m vɛ́riəbəl fɔr ə wʌ́n-júnᵻt ʧéɪnʤ ᵻn ðə prədᵻ̀ktər, ðᵻs əfɛ́kt ᵻz nɒt kɒ́nstənt bʌt dəpɛ́ndz ɒn ðə vǽlju əv ðə prədᵻ̀ktər."
             },
             {
                 "ms": 220.28,
                 "duration": 12.147999999999996,
-                "tran": ""
-            },
-            {
-                "ms": 232.428,
-                "duration": 0.563999999999993,
-                "tran": ""
+                "tran": "júzd wáɪzli, wᵻð ən əwɛ́rnəs əv pətɛ́nʃəl pᵻ̀tfɔ̀lz láɪk òʊvərfᵻ̀tᵻŋ, pɒ̀lìnóʊmiəl rəɡrɛ́ʃən kən əfɛ́ktᵻvli mɒ́dəl kɜ́rvd rəléɪʃənʃᵻ̀ps ənd jíld mɔr ǽkjərət prədᵻ̀kʃənz fɔr sɜ́rtən káɪndz əv déɪtə. "
             },
             {
                 "ms": 232.992,
