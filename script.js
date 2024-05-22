@@ -6,12 +6,22 @@
 
 function get_tracks(){
     const urls = [
+        "./transcriptions/books/B001/B002C000.json",
+        "./transcriptions/books/B001/B002C001.json",
+        "./transcriptions/books/B001/B002C002.json",
+        "./transcriptions/books/B001/B002C003.json",
+        "./transcriptions/books/B001/B002C004.json",
+        "./transcriptions/books/B001/B002C005.json",
+        "./transcriptions/books/B001/B002C006.json",
+        "./transcriptions/books/B001/B002C007.json",
+        "./transcriptions/books/B001/B002C008.json",
+        "./transcriptions/books/B001/B002C009.json",
+
         "./transcriptions/books/B001/B001C000.json",
         "./transcriptions/books/B001/B001C002.json",
         "./transcriptions/books/B009/B009C007.json",
         "./transcriptions/books/B009/B009C008.json",
         "./transcriptions/books/B009/B009C009.json",
-        // "./transcriptions/books/B009/B009C010.json",
         "./transcriptions/books/B009/B009C011.json",
     ]
     let tracks = []
