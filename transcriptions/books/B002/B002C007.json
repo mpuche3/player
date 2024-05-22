@@ -5,207 +5,172 @@
             {
                 "ms": 0,
                 "duration": 2.538,
-                "tran": ""
+                "tran": "ʌ̀nsúpərvàɪzd lɜ́rnᵻŋ - klʌ́stərᵻŋ."
             },
             {
                 "ms": 2.538,
                 "duration": 5.631,
-                "tran": ""
+                "tran": "ᵻn ðə doʊméɪn əv ʌ̀nsúpərvàɪzd lɜ́rnᵻŋ, klʌ́stərᵻŋ stǽndz æz ə kɔ́rnərstòʊn mɛ̀θədɒ́ləʤi."
             },
             {
                 "ms": 8.169,
                 "duration": 12.198,
-                "tran": ""
+                "tran": "ᵻts práɪmɛ̀ri əbʤɛ́ktᵻv ᵻz tə aɪdɛ́ntəfàɪ ənd ɡrúp sᵻ̀mᵻlər ᵻ̀nstənsᵻz təɡɛ́ðər béɪst ɒn vɛ́riəs mɛ́ʒərz əv sᵻ̀mᵻlɛ́rᵻti ɔr dᵻ̀stəns, wᵻð ðə ʌ́ltᵻmət ɡóʊl əv dᵻskʌ́vərᵻŋ ᵻnhɛ́rənt ɡrúpᵻŋz wᵻðᵻ̀n ðə déɪtə."
             },
             {
                 "ms": 20.367,
                 "duration": 8.729,
-                "tran": ""
-            },
-            {
-                "ms": 29.096,
-                "duration": 2.535,
-                "tran": ""
+                "tran": "ðə nóʊʃən əv 'sᵻ̀mᵻlɛ́rᵻti' ɔr 'dᵻ̀stəns' ᵻz dəpɛ́ndənt ɒn ðə spəsᵻ̀fᵻk mɛ́ʒər júzd, wᵻ̀ʧ kən réɪnʤ frəm juklᵻ̀diən dᵻ̀stəns tə kóʊsaɪn sᵻ̀mᵻlɛ́rᵻti, mænhǽtən dᵻ̀stəns, ənd mɛ́ni ʌ́ðərz."
             },
             {
                 "ms": 31.631,
                 "duration": 10.149000000000001,
-                "tran": ""
+                "tran": "vɛ́riəs ǽlɡərᵻ̀ðəmz, ᵻ̀nklúdᵻŋ k-mínz, DBSCAN, ənd hàɪrɑ́rkᵻkəl klʌ́stərᵻŋ, həv bᵻn dᵻváɪzd tə pərfɔ́rm klʌ́stərᵻŋ, iʧ rəláɪᵻŋ ɒn ðiz mɛ́ʒərz ᵻn dᵻ̀fərənt wéɪz. "
             },
             {
                 "ms": 41.78,
                 "duration": 4.6469999999999985,
-                "tran": ""
+                "tran": "k-mínz klʌ́stərᵻŋ ᵻz wʌ́n əv ðə móʊst wáɪdli júzd klʌ́stərᵻŋ ǽlɡərᵻ̀ðəmz."
             },
             {
                 "ms": 46.427,
                 "duration": 4.700000000000003,
-                "tran": ""
+                "tran": "ᵻt ᵻz ə sɛ́ntroɪd-béɪst ǽlɡərᵻ̀ðəm thət éɪmz tə mᵻ̀nᵻmàɪz wᵻðᵻ̀n-klʌ́stər vɛ́riəns."
             },
             {
                 "ms": 51.127,
                 "duration": 7.5760000000000005,
-                "tran": ""
-            },
-            {
-                "ms": 58.703,
-                "duration": 4.104999999999997,
-                "tran": ""
+                "tran": "ðᵻs ǽlɡərᵻ̀ðəm ɒ́pərèɪts baɪ ᵻnᵻ̀ʃəlaɪŋ sɛ́ntroɪdz rǽndəmli, fɒ́loʊd baɪ ᵻ̀tərətᵻvli əsáɪnᵻŋ ᵻ̀nstənsᵻz tə ðə nɪ́rəst sɛ́ntroɪd ənd ðɛn ʌ́pdèɪtᵻŋ ðə sɛ́ntroɪd æz ðə mín əv ðə əsáɪnd ᵻ̀nstənsᵻz."
             },
             {
                 "ms": 62.808,
                 "duration": 4.428000000000004,
-                "tran": ""
+                "tran": "ðə prɒ́sɛ̀s rᵻpíts ʌ̀ntᵻ̀l ə prìdətɜ́rmᵻnd stɒ́pᵻŋ kraɪtɪ́riən ᵻz mɛ́t,"
             },
             {
                 "ms": 67.236,
                 "duration": 4.858999999999995,
-                "tran": ""
+                "tran": "ɔ́fən wɛ́n ðə sɛ́ntroɪdz múv lɛ́s ðʌn ə θrɛ́ʃòʊld dᵻ̀stəns bitwín ᵻ̀təréɪʃənz."
             },
             {
                 "ms": 72.095,
                 "duration": 8.052000000000007,
-                "tran": ""
+                "tran": "hàʊɛ́vər, k-mínz kən kənvɜ́rʤ tə lóʊkəl ɒ́ptᵻmə, ənd ᵻts pərfɔ́rməns kən bi háɪli dəpɛ́ndənt ɒn ðə ᵻnᵻ̀ʃəl ʧɔ́ᵻs əv sɛ́ntroɪdz."
             },
             {
                 "ms": 80.147,
                 "duration": 6.534999999999997,
-                "tran": ""
+                "tran": "ᵻt ɔ́lsoʊ əsúmz thət klʌ́stərz ɑr kɒ́nvɛ̀ks ənd aɪsoʊtrɒ́pᵻk, wᵻ̀ʧ maɪt nɒt ɔ́lwèɪz bi ðə kéɪs."
             },
             {
                 "ms": 86.682,
                 "duration": 7.251999999999995,
-                "tran": ""
+                "tran": "ðə DBSCAN (dɛ́nsᵻti-béɪst spéɪʃəl klʌ́stərᵻŋ əv æ̀plᵻkéɪʃənz wᵻð nɔ́ᵻz) ǽlɡərᵻ̀ðəm ᵻz ənʌ́ðər nóʊtəbəl mɛ́θəd."
             },
             {
                 "ms": 93.934,
                 "duration": 7.465000000000003,
-                "tran": ""
+                "tran": "ᵻt ᵻz ə dɛ́nsᵻti-béɪst əpróʊʧ thət aɪdɛ́ntəfàɪz klʌ́stərz æz háɪ-dɛ́nsᵻti ríʤənz sɛ́pərèɪtᵻd baɪ ɛ́riəz əv lóʊər dɛ́nsᵻti."
             },
             {
                 "ms": 101.399,
                 "duration": 6.771000000000001,
-                "tran": ""
-            },
-            {
-                "ms": 108.17,
-                "duration": 0.8610000000000042,
-                "tran": ""
-            },
-            {
-                "ms": 109.031,
-                "duration": 9.937999999999988,
-                "tran": ""
+                "tran": "DBSCAN stɑ́rts wᵻð ən ɑ́rbətrɛ̀ri pɔ́ᵻnt, əkspǽndz ᵻt ᵻf ə səfᵻ̀ʃənt nʌ́mbər əv pɔ́ᵻnts ᵻz wᵻðᵻ̀n ə spɛ́sᵻfàɪd dᵻ̀stəns (eps), ənd tríts pɔ́ᵻnts fáʊnd wᵻðᵻ̀n ðiz EPS ríʤənz æz pɑ́rt əv ðə séɪm klʌ́stər. ðᵻs əpróʊʧ əláʊz ðə dᵻtɛ́kʃən əv ɑ́rbətrɛ̀ri-ʃéɪpt klʌ́stərz ənd ᵻnhɛ́rənt nɔ́ᵻz hǽndəlᵻŋ."
             },
             {
                 "ms": 118.969,
                 "duration": 9.247000000000014,
-                "tran": ""
+                "tran": "hàʊɛ́vər, ʧúzᵻŋ əpróʊprièɪt vǽljuz fɔr EPS ənd ðə mᵻ̀nᵻməm nʌ́mbər əv pɔ́ᵻnts kən bi ʧǽlənʤᵻŋ ənd háɪli dəpɛ́ndənt ɒn déɪtə dɛ́nsᵻti ənd dᵻ̀strəbjúʃən. "
             },
             {
                 "ms": 128.216,
                 "duration": 3.5660000000000025,
-                "tran": ""
+                "tran": "hàɪrɑ́rkᵻkəl klʌ́stərᵻŋ ɔ́fərz ən ɔltɜ́rnətᵻv əpróʊʧ."
             },
             {
                 "ms": 131.782,
                 "duration": 5.356999999999999,
-                "tran": ""
+                "tran": "ðᵻs tɛkník bᵻ̀ldz ə háɪrɑ̀rki ɔr trí-láɪk mɒ́dəl əv klʌ́stərz, nóʊn æz ə dɛ́ndrəɡræm."
             },
             {
                 "ms": 137.139,
                 "duration": 5.125,
-                "tran": ""
+                "tran": "hàɪrɑ́rkᵻkəl klʌ́stərᵻŋ kən bi əɡlɒ́mərətᵻv (bɒ́təm-ʌp) ɔr dᵻváɪsᵻv (top-down)."
             },
             {
                 "ms": 142.264,
                 "duration": 8.086999999999989,
-                "tran": ""
+                "tran": "əɡlɒ́mərətᵻv klʌ́stərᵻŋ bᵻɡᵻ̀nz wᵻð iʧ ᵻ̀nstəns æz ᵻts klʌ́stər ənd mɜ́rʤᵻz pɛ́rz əv klʌ́stərz æz wʌ́n kláɪmz ʌp ðə háɪrɑ̀rki."
             },
             {
                 "ms": 150.351,
                 "duration": 7.094999999999999,
-                "tran": ""
+                "tran": "dᵻváɪsᵻv klʌ́stərᵻŋ stɑ́rts wᵻð ɔl ᵻ̀nstənsᵻz æz wʌ́n klʌ́stər ənd splᵻ̀ts ðɛm æz wʌ́n trǽvəlz daʊn ðə háɪrɑ̀rki."
             },
             {
                 "ms": 157.446,
                 "duration": 9.320999999999998,
-                "tran": ""
+                "tran": "A sᵻɡnᵻ̀fᵻkənt ædvǽntᵻʤ əv hàɪrɑ́rkᵻkəl klʌ́stərᵻŋ ᵻz ðə əbᵻ̀lᵻti tə vᵻ̀ʒwəlàɪz ðə dɛ́ndrəɡræm, wᵻ̀ʧ kən prəváɪd ᵻ̀nsàɪts ᵻntu ðə déɪtəz nǽʧərəl dᵻvᵻ̀ʒənz."
             },
             {
                 "ms": 166.767,
                 "duration": 5.717000000000013,
-                "tran": ""
+                "tran": "hàʊɛ́vər, hàɪrɑ́rkᵻkəl klʌ́stərᵻŋ kən bi kɒ̀mpjətéɪʃənəli əkspɛ́nsᵻv fɔr lɑ́rʤ déɪtəsɛ̀ts. "
             },
             {
                 "ms": 172.484,
                 "duration": 4.9839999999999804,
-                "tran": ""
+                "tran": "A pᵻ̀vətəl ǽspɛ̀kt əv klʌ́stərᵻŋ ᵻz ðə dətɜ̀rmᵻnéɪʃən əv ðə nʌ́mbər əv klʌ́stərz."
             },
             {
                 "ms": 177.468,
                 "duration": 4.1340000000000146,
-                "tran": ""
+                "tran": "ᵻn k-mínz, ðᵻs ᵻz ə pərǽmətər thət nídz tə bi spɛ́sᵻfàɪd ʌ́pfrʌ̀nt,"
             },
             {
                 "ms": 181.602,
                 "duration": 6.567999999999984,
-                "tran": ""
+                "tran": "ənd vɛ́riəs mɛ́θədz sʌʧ æz ðə ɛ́lbòʊ mɛ́θəd ənd sᵻ̀ləwɛ́t ənǽlᵻsᵻs ɑr ɔ́fən júzd tə fáɪnd ən ɒ́ptᵻməl nʌ́mbər."
             },
             {
                 "ms": 188.17,
                 "duration": 7.753000000000014,
-                "tran": ""
+                "tran": "ᵻn kɒ́ntrɒst, DBSCAN dʌz nɒt rəkwáɪər ðᵻs pərǽmətər æz ᵻt dətɜ́rmᵻnz ðə nʌ́mbər əv klʌ́stərz béɪst ɒn ðə déɪtəz dɛ́nsᵻti."
             },
             {
                 "ms": 195.923,
                 "duration": 6.939999999999998,
-                "tran": ""
+                "tran": "hàɪrɑ́rkᵻkəl klʌ́stərᵻŋ prəváɪdz ə réɪnʤ əv klʌ́stərz dəpɛ́ndᵻŋ ɒn ðə lɛ́vəl əv ɡrǽnjəlérᵻti ðə júzər ᵻz ᵻ̀ntərəstᵻd ᵻ̀n "
             },
             {
                 "ms": 202.863,
                 "duration": 5.463999999999999,
-                "tran": ""
+                "tran": "klʌ́stər əvæ̀ljuéɪʃən, pɑ̀rtᵻ̀kjələrli ᵻn ðə ǽbsəns əv ɡráʊnd trúθ, kən bi ʧǽlənʤᵻŋ."
             },
             {
                 "ms": 208.327,
                 "duration": 5.131,
-                "tran": ""
-            },
-            {
-                "ms": 213.458,
-                "duration": 6.414000000000016,
-                "tran": ""
+                "tran": "tɛkníks sʌʧ æz sᵻ̀ləwɛ́t skɔ́rz, wᵻ̀ʧ mɛ́ʒər ðə sɛ̀pəréɪʃən bitwín klʌ́stərz, ənd wᵻðᵻ̀n-klʌ́stər sʌ́m əv skwɛ́rz (WCSS), wᵻ̀ʧ mɛ́ʒərz klʌ́stər koʊhíʒən, ɑr kɒ́mənli júzd."
             },
             {
                 "ms": 219.872,
                 "duration": 3.0379999999999825,
-                "tran": ""
+                "tran": "hàʊɛ́vər, ðiz mɛ́trᵻks ɑr hjʊrᵻ̀stᵻk ᵻn néɪʧər,"
             },
             {
                 "ms": 222.91,
                 "duration": 2.2760000000000105,
-                "tran": ""
+                "tran": "ənd ðɛr ᵻ̀ntɜ̀rprᵻtéɪʃən kən bi sʌbʤɛ́ktᵻv."
             },
             {
                 "ms": 225.186,
                 "duration": 5.481999999999999,
-                "tran": ""
+                "tran": "óʊvərɔ̀l, klʌ́stərᵻŋ ᵻz ə páʊərfəl ʌ̀nsúpərvàɪzd lɜ́rnᵻŋ túl wᵻð númərəs æ̀plᵻkéɪʃənz. "
             },
             {
                 "ms": 230.668,
                 "duration": 7.786000000000001,
-                "tran": ""
-            },
-            {
-                "ms": 238.454,
-                "duration": 5.094999999999999,
-                "tran": ""
-            },
-            {
-                "ms": 243.549,
-                "duration": 0.3149999999999977,
-                "tran": ""
+                "tran": "frəm kʌ́stəmər sɛ̀ɡməntéɪʃən ᵻn mɑ́rkətᵻŋ tə ənɒ́məli dᵻtɛ́kʃən ᵻn sàɪbərsəkjʊ́rᵻti ənd ʤín əksprɛ́ʃən ənǽlᵻsᵻs ᵻn bàɪəᵻnfərmǽtᵻks, ᵻts əbᵻ̀lᵻti tə rəvíl hᵻ̀dən strʌ́kʧərz ənd pǽtərnz ᵻn déɪtə ᵻz ᵻ̀nvǽljəbəl. "
             },
             {
                 "ms": 243.864,
