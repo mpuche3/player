@@ -26,6 +26,7 @@ function get_tracks(){
         "./transcriptions/books/B002/B002C017.json",
         "./transcriptions/books/B002/B002C018.json",
         "./transcriptions/books/B002/B002C019.json",
+
         "./transcriptions/books/B001/B001C000.json",
         "./transcriptions/books/B001/B001C002.json",
         "./transcriptions/books/B009/B009C007.json",
@@ -53,6 +54,14 @@ const FactoryAudio = function () {
     let promisePlay;
     let status = "PAUSED";
     
+    function changeTextColor() {
+        const button = document.querySelector('.button1');
+        button.style.color = 'grey';
+        setTimeout(() => {
+          button.style.color = 'white';
+        }, 50);
+    }
+
     function getStatus () {
         return status
     }
@@ -72,7 +81,7 @@ const FactoryAudio = function () {
     
     function play() {
         const playbackRate = 0.8
-        const additionalTimeintheloop = 2000
+        const additionalTimeintheloop = 500
         const audioFileFullPath = tracks[itracks]["audioFileFullPath"];
         const currentTime = tracks[itracks]["currentTimes"][iCurrentTimes]["ms"];
         const nextTime = tracks[itracks]["currentTimes"][iCurrentTimes + 1]["ms"];
@@ -95,6 +104,7 @@ const FactoryAudio = function () {
             });
         }, duration * 1000 * (1 / playbackRate))
         timeoutId_play = setTimeout(_ => {
+            // changeTextColor()
             play();
         }, duration * 1000 * (1 / playbackRate) + additionalTimeintheloop);
     }

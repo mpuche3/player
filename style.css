@@ -41,14 +41,14 @@ body {
     font-size: 1.8rem;
     /* font-weight: bold; */
     color: #ffffff;
-    background-color: #7a7a7a;
+    background-color:#6b6464;
     border: none;
     cursor: pointer;
     border-bottom: 1px solid #ffffff;
 }
 
 .button:hover {
-    background-color: #6b6464;
+    background-color: #5e5e5e;
 }
 
 .button-row {
